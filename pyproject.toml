@@ -1,0 +1,16 @@
+repository = "https://github.com/mssalvatore/jira-issue-commit-hook"
+
+[project]
+name = "jira-issue-commit-hook"
+version = "v1.0.0"
+description = "A pre-commit hook to include a JIRA issue number in the commit message"
+authors = [
+    {name = "Mike Salvatore", email = "mike.s.salvatore@gmail.com"}
+]
+license = {text="GPLv3"}
+
+[project.scripts]
+jira-issue-commit-hook = "jira_issue_commit_hook:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]

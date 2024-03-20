@@ -1,0 +1,6 @@
+- id: jira-issue
+  name: "Jira issue commit message hook"
+  description: "Adds a JIRA Issue number from the branch to the commit message."
+  language: python
+  entry: jira-issue-commit-hook
+  stages: [prepare-commit-msg]
