@@ -7,7 +7,7 @@ def main():
     commit_msg_file = sys.argv[1]
     current_branch = get_branch_name()
 
-    m = re.match(r"^([A-Z]{3,}-\d+)-.+$", current_branch)
+    m = re.match(r"^([A-Z]+-\d+)-.+$", current_branch)
     if not m:
         exit()
 
